@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#1C1713">
+  <meta name="description" content="Wedding Invitation — Huzaifa & Alishba. Thursday, November 11, 2032. Join us for an evening of love, laughter, duas, and unforgettable memories.">
+  <title>Wedding Invitation | Huzaifa &amp; Alishba</title>
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/envelope.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/rsvp.css">
+</head>
+<body>
+
+  <!-- Paper Grain Ambient Texture -->
+  <div class="paper-texture-overlay" aria-hidden="true"></div>
+
+  <!-- Background Music Audio Element -->
+  <audio id="wedding-audio" loop preload="auto">
+    <source src="public/19.08.2026_20.12.36_REC.mp4" type="video/mp4">
+  </audio>
+
+  <!-- Ambient Floating Music Toggle Button -->
+  <button id="music-toggle" class="music-toggle-btn" aria-label="Toggle Background Music" title="Play Music">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+    </svg>
+  </button>
+
+  <!-- Ambient Canvas for Floating Petals & Golden Sparkles -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- =========================================================================
+       INITIAL SCREEN: CLOSED 3D ROYAL ENVELOPE
+       ========================================================================= -->
+  <section id="envelope-screen" class="envelope-screen" aria-label="Wedding Envelope">
+    <div class="envelope-wrapper">
+      <!-- High Resolution Realistic Envelope Stationery Art -->
+      <div class="envelope-art"></div>
+
+      <!-- Inner Royal Letter Preview (Slides UP on Opening) -->
+      <div class="envelope-letter-card">
+        <div class="letter-card-border">
+          <div class="letter-monogram">H &amp; A</div>
+          <p class="letter-invitation-sub">Wedding Invitation</p>
+          <div class="letter-divider">✦</div>
+          <p class="letter-date">11 · 11 · 2032</p>
+        </div>
+      </div>
+
+      <!-- 3D Folding Flap Simulation -->
+      <div class="envelope-flap-top">
+        <div class="flap-inner-shadow"></div>
+      </div>
+
+      <!-- Golden Radial Light Eruption & Beams -->
+      <div class="envelope-glow-burst"></div>
+      <div class="envelope-light-rays"></div>
+
+      <!-- Central Burgundy Wax Seal & Tap Callout -->
+      <div id="wax-seal-trigger" class="wax-seal-container" role="button" tabindex="0" aria-label="Open Wedding Invitation">
+        <div class="wax-seal-button">
+          <div class="wax-seal-pulse-ring"></div>
+          <img src="public/wax_seal_ha.jpg" alt="H & A Wax Seal" class="wax-seal-real-img">
+        </div>
+        <div class="tap-to-open-box">
+          <span class="tap-chevron">&#x2303;</span>
+          <span class="tap-text">TAP TO OPEN</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MAIN WEDDING INVITATION WEBSITE CONTENT
+       ========================================================================= -->
+  <main class="invitation-app" id="invitation-app">
+
+    <!-- 1. HERO / ARCH & SWANS SCENE -->
+    <section id="hero" class="hero-section" aria-label="Wedding Hero">
+      <div class="hero-background-art" aria-hidden="true"></div>
+      <div class="hero-vignette-overlay" aria-hidden="true"></div>
+
+      <!-- Bottom Corner Floral Framing -->
+      <div class="hero-floral-left" aria-hidden="true"></div>
+      <div class="hero-floral-right" aria-hidden="true"></div>
+
+      <!-- Top Date Block -->
+      <div class="hero-header-block reveal-item">
+        <h2 class="hero-wedding-day-text">Wedding Day</h2>
+        <p class="hero-date-text">11.11.32</p>
+      </div>
+
+      <!-- Center Calligraphy Couple Names -->
+      <div class="hero-names-block reveal-item">
+        <h1 class="hero-name">Huzaifa</h1>
+        <span class="hero-ampersand">&amp;</span>
+        <h1 class="hero-name">Alishba</h1>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#intro" class="hero-scroll-indicator reveal-item" aria-label="Scroll to invitation details">
+        <span class="scroll-text">Scroll down</span>
+        <div class="scroll-arrow-down">
+          <svg viewBox="0 0 24 24">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+      </a>
+    </section>
+
+    <!-- Natural Torn Paper Transition Divider -->
+    <div class="torn-divider" aria-hidden="true"></div>
+
+    <!-- 2. INTRODUCTION & BLESSINGS -->
+    <section id="intro" class="invitation-section intro-section">
+      <div class="reveal-item">
+        <p class="bismillah-text">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+      </div>
+
+      <div class="tagline-group reveal-item">
+        <span class="tagline-small">Two Souls</span>
+        <span class="tagline-small">One destiny</span>
+        <h2 class="tagline-main">A Lifetime written by Allah</h2>
+      </div>
+
+      <div class="invitation-body-card reveal-item">
+        <p class="invitation-salutation">Dear Friends and Family</p>
+        <p class="invitation-message">
+          Join us for an evening of love, laughter, duas, and unforgettable memories as we begin our forever.
+        </p>
+      </div>
+    </section>
+
+    <!-- Torn Paper Divider -->
+    <div class="torn-divider inverted" aria-hidden="true"></div>
+
+    <!-- 3. LIVE COUNTDOWN SECTION -->
+    <section id="countdown" class="invitation-section countdown-section">
+      <h2 class="section-script-title reveal-item">The Celebration Begins In</h2>
+      <div class="countdown-container reveal-item">
+        <div class="countdown-unit">
+          <span id="cd-days" class="countdown-number">00</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <span class="countdown-separator">:</span>
+        <div class="countdown-unit">
+          <span id="cd-hours" class="countdown-number">00</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <span class="countdown-separator">:</span>
+        <div class="countdown-unit">
+          <span id="cd-minutes" class="countdown-number">00</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <span class="countdown-separator">:</span>
+        <div class="countdown-unit">
+          <span id="cd-seconds" class="countdown-number">00</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Torn Paper Divider -->
+    <div class="torn-divider" aria-hidden="true"></div>
+
+    <!-- 4. SCHEDULE OF EVENTS -->
+    <section id="schedule" class="invitation-section schedule-section">
+      <div class="schedule-header-flourish reveal-item">
+        <span class="flourish-icon">&#10086;</span>
+        <h2 class="section-script-title" style="margin-bottom:0;">Schedule of Events</h2>
+        <span class="flourish-icon">&#10086;</span>
+      </div>
+
+      <div class="timeline-track">
+        <!-- 5 PM -->
+        <div class="timeline-item reveal-item">
+          <div class="timeline-time">5 PM</div>
+          <div class="timeline-node node-rose"></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Guest<br>Arrival</h3>
+          </div>
+        </div>
+
+        <!-- 6 PM -->
+        <div class="timeline-item reveal-item">
+          <div class="timeline-time">6 PM</div>
+          <div class="timeline-node node-diamond"></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Nikkah<br>Ceremony</h3>
+          </div>
+        </div>
+
+        <!-- 7 PM -->
+        <div class="timeline-item reveal-item">
+          <div class="timeline-time">7 PM</div>
+          <div class="timeline-node node-rose"></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Mocktail<br>Hour</h3>
+          </div>
+        </div>
+
+        <!-- 8 PM -->
+        <div class="timeline-item reveal-item">
+          <div class="timeline-time">8 PM</div>
+          <div class="timeline-node node-diamond"></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Dinner</h3>
+          </div>
+        </div>
+
+        <!-- 9 PM -->
+        <div class="timeline-item reveal-item">
+          <div class="timeline-time">9 PM</div>
+          <div class="timeline-node node-rose"></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Dance</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Torn Paper Divider -->
+    <div class="torn-divider inverted" aria-hidden="true"></div>
+
+    <!-- 5. LOCATION & MAP -->
+    <section id="location" class="invitation-section location-section">
+      <h2 class="section-script-title reveal-item">Location</h2>
+      <h3 class="venue-name reveal-item">Islamic Center of Melville</h3>
+      <p class="venue-address reveal-item">Address: 118 Old East Neck Road Melville, NY 11747</p>
+
+      <!-- Architectural Sketch of Mosque -->
+      <div class="venue-sketch-wrapper reveal-item">
+        <img src="public/venue_mosque_sketch.jpg" alt="Islamic Center of Melville Architectural Sketch" class="venue-sketch-img" loading="lazy">
+      </div>
+
+      <!-- Integrated Google Map Card -->
+      <div class="map-card-wrapper reveal-item">
+        <iframe 
+          class="map-iframe"
+          title="Islamic Center of Melville Location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.6508930438343!2d-73.41160352358826!3d40.79607627138139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e829fa757f4fc3%3A0x8677c7fcf033dc0b!2sIslamic%20Center%20of%20Melville!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus"
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- Open In Maps Button -->
+      <a href="https://maps.google.com/?q=Islamic+Center+of+Melville,+118+Old+East+Neck+Rd,+Melville,+NY+11747" target="_blank" rel="noopener noreferrer" class="btn-open-maps reveal-item">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        <span>Open in Maps</span>
+      </a>
+    </section>
+
+    <!-- Torn Paper Divider -->
+    <div class="torn-divider" aria-hidden="true"></div>
+
+    <!-- 6. DRESS CODE & GIFT PREFERENCE -->
+    <section class="invitation-section note-section">
+      <div class="reveal-item">
+        <h2 class="section-script-title">Dress Code</h2>
+        <p class="note-text">
+          We kindly ask guests to avoid deep red and maroon attire for the celebration.
+        </p>
+      </div>
+
+      <div class="reveal-item" style="margin-top: 45px;">
+        <h2 class="section-script-title">Gift Preference</h2>
+        <p class="note-text">
+          Kindly, no boxed gifts please.
+        </p>
+      </div>
+    </section>
+
+    <!-- Torn Paper Divider -->
+    <div class="torn-divider inverted" aria-hidden="true"></div>
+
+    <!-- 7. RSVP SECTION WITH INTERACTIVE WAX SEAL -->
+    <section id="rsvp" class="invitation-section rsvp-section">
+      <h2 class="section-script-title reveal-item">Confirm Your Attendance</h2>
+      <p class="note-text reveal-item" style="max-width: 320px;">
+        To help us prepare for a joyful celebration, kindly confirm your attendance.
+      </p>
+
+      <!-- 3D Wax Seal RSVP Trigger -->
+      <div id="rsvp-seal-trigger" class="rsvp-seal-trigger reveal-item" role="button" tabindex="0" aria-label="Open RSVP Form">
+        <div class="rsvp-seal-circle">
+          <div class="rsvp-pulse-ring"></div>
+          <img src="public/wax_seal_rsvp.jpg" alt="RSVP Wax Seal">
+        </div>
+        <div class="rsvp-click-callout">
+          <span class="rsvp-chevron">&#x2303;</span>
+          <span class="rsvp-click-text">Click to open</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Torn Paper Divider -->
+    <div class="torn-divider" aria-hidden="true"></div>
+
+    <!-- 8. FINAL SECTION & COUPLE PHOTO -->
+    <section class="invitation-section final-section">
+      <h2 class="closing-title reveal-item">Hope to see you there!</h2>
+      <h3 class="closing-names reveal-item">Huzaifa and Alishba</h3>
+
+      <!-- Couple Photo Card -->
+      <div class="couple-photo-card reveal-item">
+        <img src="public/couple_photo.jpg" alt="Huzaifa and Alishba" class="couple-photo-img" loading="lazy">
+      </div>
+
+      <!-- Bottom Corner Floral Framing -->
+      <div class="final-floral-left" aria-hidden="true"></div>
+      <div class="final-floral-right" aria-hidden="true"></div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       RSVP STATIONERY MODAL DIALOG
+       ========================================================================= -->
+  <div id="rsvp-modal" class="rsvp-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="rsvp-modal-title">
+    <div class="rsvp-modal-card">
+      <button id="rsvp-close-btn" class="rsvp-close-btn" aria-label="Close RSVP Modal">&times;</button>
+
+      <!-- Form View -->
+      <div id="rsvp-form-container">
+        <div class="rsvp-modal-header">
+          <h2 id="rsvp-modal-title" class="rsvp-modal-title">Confirm Your Attendance</h2>
+          <p class="rsvp-modal-subtitle">Please RSVP before August 09</p>
+        </div>
+
+        <form id="wedding-rsvp-form" class="rsvp-form">
+          <!-- Guest Name -->
+          <div class="form-group">
+            <label class="form-label" for="guest-name">Your Name</label>
+            <input type="text" id="guest-name" name="guest_name" class="stationery-input" placeholder="e.g. Tariq Al-Mansoor" required autocomplete="name">
+          </div>
+
+          <!-- Attendance -->
+          <div class="form-group">
+            <label class="form-label">Will you be attending?</label>
+            <div class="attendance-options">
+              <label class="attendance-radio-label">
+                <input type="radio" name="attendance" value="Attending" required checked>
+                <span class="custom-radio-circle"></span>
+                <span>Accepts with pleasure</span>
+              </label>
+              <label class="attendance-radio-label">
+                <input type="radio" name="attendance" value="Declined">
+                <span class="custom-radio-circle"></span>
+                <span>Declines with regret</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Guest Count -->
+          <div class="form-group">
+            <label class="form-label" for="guest-count">Number of Guests Attending</label>
+            <input type="number" id="guest-count" name="guest_count" class="stationery-input" min="1" max="10" value="1">
+          </div>
+
+          <!-- Song Request -->
+          <div class="form-group">
+            <label class="form-label" for="song-request">A Song That Gets You Dancing</label>
+            <input type="text" id="song-request" name="song_request" class="stationery-input" placeholder="Artist &amp; Song Title">
+          </div>
+
+          <!-- Children Attending -->
+          <div class="form-group">
+            <label class="form-label" for="children-info">
+              Children Attending
+              <span class="sub-label">Please include names and ages</span>
+            </label>
+            <input type="text" id="children-info" name="children_info" class="stationery-input" placeholder="e.g. Rayan (5), Sophia (3)">
+          </div>
+
+          <!-- Blessings / Dietary Requirements -->
+          <div class="form-group">
+            <label class="form-label" for="special-message">
+              Warm Wishes or Dietary Notes
+              <span class="sub-label">Optional message for the couple</span>
+            </label>
+            <textarea id="special-message" name="message" class="stationery-textarea" placeholder="Share your duas or message..."></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn-submit-rsvp">Send RSVP</button>
+        </form>
+      </div>
+
+      <!-- Success View -->
+      <div id="rsvp-success-view" class="rsvp-success-view">
+        <div class="success-icon-wrap">
+          <svg viewBox="0 0 24 24">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+          </svg>
+        </div>
+        <h3 class="success-title">Thank You!</h3>
+        <p class="success-desc">
+          Dear <span id="success-guest-name" style="font-weight:600; color:#8C6A24;">Guest</span>, your response has been lovingly recorded. We look forward to celebrating this blessed occasion with you!
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/envelope.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/rsvp.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      WeddingAudio.init();
+      EnvelopeController.init();
+      CountdownTimer.init();
+      ScrollReveals.init();
+      ParticleEngine.init();
+      RSVPController.init();
+    });
+  </script>
+</body>
+</html>

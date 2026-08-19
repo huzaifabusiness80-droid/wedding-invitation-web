@@ -1,0 +1,196 @@
+/* ==========================================================================
+   Hero Wedding Intro Scene (Arch, Swans & Calligraphy)
+   ========================================================================== */
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px 20px 24px;
+  background-color: var(--color-ivory);
+  overflow: hidden;
+}
+
+/* Illustrated Arch & Swans Background Container */
+.hero-background-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/hero_arch_swans.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  z-index: 1;
+  opacity: 0.95;
+  transform: scale(1.02);
+  transition: transform 12s ease-out;
+  animation: subtleLandscapeParallax 20s ease-in-out infinite alternate;
+}
+
+@keyframes subtleLandscapeParallax {
+  0% { transform: scale(1) translateY(0); }
+  100% { transform: scale(1.04) translateY(-8px); }
+}
+
+/* Soft atmospheric radial vignette */
+.hero-vignette-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 35%, rgba(248, 243, 234, 0.2) 0%, rgba(248, 243, 234, 0.6) 65%, rgba(240, 230, 215, 0.95) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Corner Floral Overlays */
+.hero-floral-left,
+.hero-floral-right {
+  position: absolute;
+  bottom: -15px;
+  width: 175px;
+  height: 175px;
+  background-image: url('../public/noroot.png (1).webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+  pointer-events: none;
+  filter: drop-shadow(0 8px 16px rgba(60, 45, 30, 0.12));
+}
+
+.hero-floral-left {
+  left: -20px;
+  transform: rotate(-10deg);
+  animation: floralSwayLeft 7s ease-in-out infinite alternate;
+}
+
+.hero-floral-right {
+  right: -20px;
+  transform: scaleX(-1) rotate(-10deg);
+  animation: floralSwayRight 8s ease-in-out infinite alternate;
+}
+
+@keyframes floralSwayLeft {
+  0% { transform: rotate(-10deg) translateY(0); }
+  100% { transform: rotate(-6deg) translateY(-6px); }
+}
+
+@keyframes floralSwayRight {
+  0% { transform: scaleX(-1) rotate(-10deg) translateY(0); }
+  100% { transform: scaleX(-1) rotate(-14deg) translateY(-5px); }
+}
+
+/* Top Date & Header Block */
+.hero-header-block {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.hero-wedding-day-text {
+  font-family: var(--font-script);
+  font-size: 2.3rem;
+  line-height: 1.1;
+  color: var(--color-gold);
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
+}
+
+.hero-date-text {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  letter-spacing: 0.22em;
+  color: var(--color-text-main);
+  font-weight: 500;
+  margin-top: -2px;
+}
+
+/* Center Names Typography */
+.hero-names-block {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.hero-name {
+  font-family: var(--font-script);
+  font-size: 4.6rem;
+  line-height: 0.95;
+  color: #A38038;
+  background: linear-gradient(135deg, #8E6F2D 0%, #D4B065 40%, #FFF0C8 55%, #8E6F2D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.85));
+  letter-spacing: 0.02em;
+  padding: 0 10px;
+}
+
+.hero-ampersand {
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  font-style: italic;
+  color: var(--color-gold);
+  margin: 6px 0;
+  opacity: 0.85;
+}
+
+/* Bottom Scroll Down Indicator */
+.hero-scroll-indicator {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.scroll-text {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--color-text-main);
+  letter-spacing: 0.06em;
+}
+
+.scroll-arrow-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-gold);
+  animation: floatDownPulse 2.4s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+.scroll-arrow-down svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  fill: none;
+}
+
+@keyframes floatDownPulse {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(7px);
+    opacity: 1;
+  }
+}
