@@ -56,8 +56,8 @@ const weddingConfig = {
     tornPaperTexture: "public/noroot.png.webp",
     heroArch: "public/hero_arch_swans.jpg",
     venueSketch: "public/venue_mosque_sketch.jpg",
-    couplePhoto: "public/couple_photo.jpg",
+    couplePhoto: "public/ChatGPT Image Aug 21, 2026, 09_01_17 PM.png",
     rsvpWaxSeal: "public/wax_seal_rsvp.jpg",
-    musicSrc: "public/19.08.2026_20.12.36_REC.mp4"
+    musicSrc: "public/5RT6QMKJTjQ-cffd9849a8fcdfe4c2448d426d301e39614.mp3"
   }
 };

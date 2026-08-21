@@ -307,6 +307,12 @@ const ScrollReveals = (() => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('revealed');
+
+          // Auto-play videos when revealed in viewport
+          const video = entry.target.querySelector('video') || (entry.target.tagName === 'VIDEO' ? entry.target : null);
+          if (video && video.paused) {
+            video.play().catch(() => {});
+          }
         }
       });
     }, {

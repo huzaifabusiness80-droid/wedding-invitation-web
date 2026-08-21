@@ -93,7 +93,7 @@ const EnvelopeController = (() => {
     setTimeout(() => {
       envelopeScreen.classList.add('opened');
       WeddingAudio.showButton();
-    }, 1750);
+    }, 2200);
   }
 
   return {

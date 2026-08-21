@@ -123,19 +123,22 @@
   justify-content: center;
   text-align: center;
   margin-top: -10px;
+  overflow: visible;
 }
 
 .hero-name {
   font-family: var(--font-script);
   font-size: 4.6rem;
-  line-height: 0.95;
+  line-height: 1.25;
   color: #A38038;
   background: linear-gradient(135deg, #8E6F2D 0%, #D4B065 40%, #FFF0C8 55%, #8E6F2D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.85));
   letter-spacing: 0.02em;
-  padding: 0 10px;
+  padding: 14px 16px 8px;
+  display: inline-block;
+  overflow: visible;
 }
 
 .hero-ampersand {
@@ -143,7 +146,7 @@
   font-size: 1.7rem;
   font-style: italic;
   color: var(--color-gold);
-  margin: 6px 0;
+  margin: -4px 0;
   opacity: 0.85;
 }
 
@@ -194,3 +197,28 @@
     opacity: 1;
   }
 }
+
+/* Mobile & Small Screen Refinements */
+@media (max-width: 440px) {
+  .hero-name {
+    font-size: 3.9rem;
+    padding: 12px 12px 6px;
+    line-height: 1.25;
+  }
+
+  .hero-wedding-day-text {
+    font-size: 2.1rem;
+  }
+
+  .hero-date-text {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-name {
+    font-size: 3.4rem;
+    padding: 10px 10px 4px;
+  }
+}
+
